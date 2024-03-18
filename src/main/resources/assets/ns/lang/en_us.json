@@ -1,0 +1,15 @@
+{
+  "anmao.mc.ns": "Neko Skill",
+
+  "key.category.ns.mc": "Neko Skill",
+  "key.ns.skill_select": "Select Skill",
+  "screen.ns.skill.select.title": "Select Your Element",
+  "screen.ns.skill.select.title.faction": "Select Your Faction",
+
+  "skill.ns.faction.behavior.Lawful": "Lawful",
+  "skill.ns.faction.behavior.Neutral": "Neutral",
+  "skill.ns.faction.behavior.Chaotic": "Chaotic",
+  "skill.ns.faction.morality.Goodness": "Goodness",
+  "skill.ns.faction.morality.Neutral": "Neutral",
+  "skill.ns.faction.morality.Evil": "Evil"
+}
