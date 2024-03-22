@@ -4,6 +4,9 @@
   "key.ns.skill_select": "选择技能",
   "screen.ns.skill.select.title": "Select Your Element",
   "screen.ns.skill.select.title.faction": "请选择您的阵营",
+  "screen.ns.skill.select.title.career": "请选择您的职业",
+  "screen.ns.skill.title.faction": "已加入阵营",
+  "screen.ns.skill.title.career": "已选择职业",
 
 
 
@@ -12,6 +15,33 @@
   "skill.ns.faction.behavior.Chaotic": "混乱",
   "skill.ns.faction.morality.Goodness": "善良",
   "skill.ns.faction.morality.Neutral": "中立",
-  "skill.ns.faction.morality.Evil": "邪恶"
+  "skill.ns.faction.morality.Evil": "邪恶",
+
+  "skill.ns.career.Warrior": "战士",
+  "skill.ns.career.Mage": "法师",
+  "skill.ns.career.Archer": "弓箭手",
+  "skill.ns.career.Thief": "盗贼",
+  "skill.ns.career.Priest": "牧师",
+  "skill.ns.career.Paladin": "圣骑士",
+  "skill.ns.career.Druid": "德鲁伊",
+  "skill.ns.career.Ranger": "游侠",
+  "skill.ns.career.Sorcerer": "巫师",
+  "skill.ns.career.Bard": "吟游诗人",
+  "skill.ns.career.Monk": "武僧",
+  "skill.ns.career.Necromancer": "死灵法师",
+  "skill.ns.career.Barbarian": "野蛮人",
+  "skill.ns.career.Hunter": "猎人",
+  "skill.ns.career.Warlock": "术士",
+  "skill.ns.career.Alchemist": "炼金术士",
+  "skill.ns.career.Engineer": "工程师",
+  "skill.ns.career.Assassin": "刺客",
+  "skill.ns.career.Summoner": "召唤师",
+  "skill.ns.career.Gladiator": "角斗士",
+
+
+
+  "skill.ns.base": "基础技能",
+  "skill.ns.base.desc": "被动技能，装备后每级 +1 攻击力、+1 盔甲",
+  "skill.ns.tooltip.lvl": "等级"
 
 }

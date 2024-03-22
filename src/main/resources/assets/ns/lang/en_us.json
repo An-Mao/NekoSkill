@@ -5,11 +5,46 @@
   "key.ns.skill_select": "Select Skill",
   "screen.ns.skill.select.title": "Select Your Element",
   "screen.ns.skill.select.title.faction": "Select Your Faction",
+  "screen.ns.skill.select.title.career": "Select Your Career",
+  "screen.ns.skill.title.faction": "Your Faction",
+  "screen.ns.skill.title.career": "Your Career",
 
   "skill.ns.faction.behavior.Lawful": "Lawful",
   "skill.ns.faction.behavior.Neutral": "Neutral",
   "skill.ns.faction.behavior.Chaotic": "Chaotic",
   "skill.ns.faction.morality.Goodness": "Goodness",
   "skill.ns.faction.morality.Neutral": "Neutral",
-  "skill.ns.faction.morality.Evil": "Evil"
+  "skill.ns.faction.morality.Evil": "Evil",
+
+  "skill.ns.career.Warrior": "Warrior",
+  "skill.ns.career.Mage": "Mage",
+  "skill.ns.career.Archer": "Archer",
+  "skill.ns.career.Thief": "Thief",
+  "skill.ns.career.Priest": "Priest",
+  "skill.ns.career.Paladin": "Paladin",
+  "skill.ns.career.Druid": "Druid",
+  "skill.ns.career.Ranger": "Ranger",
+  "skill.ns.career.Sorcerer": "Sorcerer",
+  "skill.ns.career.Bard": "Bard",
+  "skill.ns.career.Monk": "Monk",
+  "skill.ns.career.Necromancer": "Necromancer",
+  "skill.ns.career.Barbarian": "Barbarian",
+  "skill.ns.career.Hunter": "Hunter",
+  "skill.ns.career.Warlock": "Warlock",
+  "skill.ns.career.Alchemist": "Alchemist",
+  "skill.ns.career.Engineer": "Engineer",
+  "skill.ns.career.Assassin": "Assassin",
+  "skill.ns.career.Summoner": "Summoner",
+  "skill.ns.career.Gladiator": "Gladiator",
+
+
+  "skill.ns.base": "Base",
+  "skill.ns.base.desc": "The Base Skill",
+
+
+
+
+
+  "skill.ns.tooltip.lvl": "Level"
+
 }

@@ -23,8 +23,8 @@ public class SkillEvent {
         }
         @SubscribeEvent
         public static void onAttachCapabilitiesPlayer(AttachCapabilitiesEvent<Entity> event) {
-            if (event.getObject() instanceof ServerPlayer serverPlayer) {
-                if (!serverPlayer.getCapability(SkillProvider.SKILL).isPresent()) {
+            if (event.getObject() instanceof Player player) {
+                if (!player.getCapability(SkillProvider.SKILL).isPresent()) {
                     event.addCapability(new ResourceLocation(NS.MOD_ID, "skill"), new SkillProvider());
                 }
             }
@@ -33,9 +33,9 @@ public class SkillEvent {
         @SubscribeEvent
         public static void onPlayerCloned(PlayerEvent.Clone event)
         {
-            if (event.getEntity() instanceof ServerPlayer) {
+            if (event.getEntity() instanceof ServerPlayer serverPlayer) {
                 event.getOriginal().reviveCaps();
-                event.getOriginal().getCapability(SkillProvider.SKILL).ifPresent(oldStore -> event.getOriginal().getCapability(SkillProvider.SKILL).ifPresent(newStore -> newStore.copyFrom(oldStore)));
+                event.getOriginal().getCapability(SkillProvider.SKILL).ifPresent(oldStore -> event.getOriginal().getCapability(SkillProvider.SKILL).ifPresent(newStore -> newStore.copyFrom(serverPlayer,oldStore)));
             }
         }
         @SubscribeEvent
@@ -48,7 +48,16 @@ public class SkillEvent {
         @SubscribeEvent
         public static void onAttack(AttackEntityEvent event) {
             Player player = event.getEntity();
-            player.getCapability(SkillProvider.SKILL).ifPresent(mobSkillCap -> mobSkillCap.hurt(player,event.getTarget()));
+            player.getCapability(SkillProvider.SKILL).ifPresent(mobSkillCap -> mobSkillCap.attack(player,event.getTarget()));
+        }
+        @SubscribeEvent
+        public static void onLogin(PlayerEvent.PlayerLoggedInEvent event){
+            if (event.getEntity() instanceof ServerPlayer serverPlayer){
+                serverPlayer.getCapability(SkillProvider.SKILL).ifPresent(skillCap -> {
+                    System.out.println("send player skill");
+                    skillCap.sendChange(serverPlayer);
+                });
+            }
         }
     }
 }
